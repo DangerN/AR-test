@@ -17,8 +17,8 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
         <!-- <a-assets>
-          <a-asset-item id="flatiron-logo-obj" src="https://raw.githubusercontent.com/DangerN/AR-test/master/pattern-qr-code.patt"></a-asset-item>
-          <a-asset-item id="flatiron-logo-mtl" src="https://raw.githubusercontent.com/DangerN/AR-test/master/pattern-qr-code.patt"></a-asset-item>
+          <a-asset-item id="flatiron-logo" obj-model="https://raw.githubusercontent.com/DangerN/AR-test/master/flatiron%20school%20logo.obj"></a-asset-item>
+          <a-asset-item id="flatiron-logo-mtl" src="https://raw.githubusercontent.com/DangerN/AR-test/master/flatiron%20school%20logo.mtl"></a-asset-item>
         </a-assets> -->
 
         <a-marker type='barcode' value='7'>
@@ -31,6 +31,8 @@
 
         <a-marker id="animated-marker" type='barcode' value='6'>
             <a-entity
+                obj-model="obj: url(https://raw.githubusercontent.com/DangerN/AR-test/master/flatiron%20school%20logo.obj);
+                            mtl: url(https://raw.githubusercontent.com/DangerN/AR-test/master/flatiron%20school%20logo.mtl)"
                 gltf-model="#animated-asset"
                 scale="2">
             </a-entity>
